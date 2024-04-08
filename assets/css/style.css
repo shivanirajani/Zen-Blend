@@ -151,6 +151,30 @@ body{
 \*-----------------------------------*/
 
 
+.img-holder {
+  --width: 540px; /* Set the width using CSS variable */
+  --height: 720px; /* Set the height using CSS variable */
+  width: 100%; /* Adjust this width as needed */
+  max-width: 400px; /* Set a maximum width for the image */
+  aspect-ratio: var(--width) / var(--height); /* Aspect ratio based on custom properties */
+  background-color: var(--light-gray);
+  position: relative;
+  overflow: hidden;
+}
+
+.img-holder img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Adjust this property to control how the image fits */
+}
+.badge{
+  max-width: max-content;
+  background-color: var(--hoockers-green);
+  color: var(--white);
+  font-weight: var(--fw-700);
+  padding-inline: 12px;
+  border-radius: var(--radius-3);
+}
 
 /* Reused styles go here */
 
@@ -347,18 +371,21 @@ body{
 /* Hero section styles go here */
 
 
-.container {padding-inline: 15px;}
+.container {padding-inline: 20px;}
 
 .section {padding-block: var(--section-padding);}
 
 .has-bg-image {
   background-repeat: no-repeat;
   background-size: cover;
-  background-position: center;
+  background-position: center ; /* Adjusted position */
   background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0));
+  height: 900px;
 
+  
 
 }
+
 
 
 
@@ -369,6 +396,7 @@ body{
   color: #151d10;
   font-weight: bolder;
   line-height: 1.2;
+  margin-top: 200px;
 
 }
 
@@ -454,7 +482,7 @@ body{
 
 .hero-card{
   background-color: var(--light-gray);
-  padding: 180px 15px;
+  padding: 120px 15px;
   background-position: 40%;
  
 
@@ -481,52 +509,435 @@ body{
   #COLLECTION
 \*-----------------------------------*/
 
-/* Collection section styles go here */
+.collection { padding-block-start: 0; }
+
+.collection-list {
+  display: grid;
+  gap: 15px;
+}
+
+.collection-card {
+  background-color: var(--light-gray);
+  min-height: 400px;
+  padding: 40px;
+  padding-block-end: 30px;
+  display: flex;
+  flex-direction: column;
+}
+
+.collection-card .card-title { margin-block-end: 12px; }
+
+.collection-card .card-text {
+  color: var(--black);
+  font-size: var(--fs-6);
+  font-weight: var(--fw-600);
+  margin-block-end: auto;
+}
+
+
+
 
 /*-----------------------------------*\
   #SHOP
 \*-----------------------------------*/
 
+
+
+.shop .title-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  gap: 18px;
+  margin-block-end: 50px;
+}
+
+.shop .btn-link:is(:hover, :focus) { color: var(--hoockers-green); }
+
+.shop-card .card-banner {
+  position: relative;
+  overflow: hidden;
+}
+
+.shop-card .badge {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+}
+
+.shop-card .card-actions {
+  position: absolute;
+  top: 50%;
+  right: 0;
+  transform: translate(0, -50%);
+  display: grid;
+  gap: 10px;
+  opacity: 0;
+  transition: var(--transition-2);
+}
+
+.shop-card .action-btn {
+  background-color: var(--white);
+  font-size: 24px;
+  padding: 12px;
+  border-radius: 50%;
+  transition: var(--transition-1);
+}
+
+.shop-card .action-btn:is(:hover, :focus) {
+  background-color: var(--black);
+  color: var(--white);
+}
+
+.shop-card:is(:hover, :focus-within) .card-actions {
+  opacity: 1;
+  transform: translate(-20px, -50%);
+}
+
+.shop-card .card-content {
+  padding-block: 20px;
+  text-align: center;
+}
+
+.shop-card :is(.price, .card-rating, .rating-wrapper) {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+}
+
+.shop-card .del {
+  font-size: var(--fs-9);
+  font-weight: var(--fw-400);
+}
+
+.shop-card .price .span {
+  color: var(--black);
+  font-weight: var(--fw-700);
+}
+
+.shop-card .card-title {
+  color: var(--black);
+  font-size: var(--fs-7);
+  font-weight: var(--fw-500);
+  margin-block-end: 8px;
+  transition: var(--transition-1);
+}
+
+.shop-card .card-title:is(:hover, :focus) {
+  text-decoration: underline;
+  color: var(--hoockers-green);
+}
+
+.shop-card .rating-wrapper {
+  gap: 2px;
+  color: var(--hoockers-green);
+  font-size: 15px;
+}
+
+.shop-card .rating-text {
+  font-size: var(--fs-8);
+  font-weight: var(--fw-400);
+  line-height: 1;
+}
+
+
 /* Shop section styles go here */
 
-/*-----------------------------------*\
-  #BANNER
-\*-----------------------------------*/
+ /**
+   * REUSED STYLE
+   */
 
-/* Banner section styles go here */
-
-/*-----------------------------------*\
-  #FEATURE
-\*-----------------------------------*/
-
-/* Feature section styles go here */
-
-/*-----------------------------------*\
-  #OFFER
-\*-----------------------------------*/
-
-/* Offer section styles go here */
-
-/*-----------------------------------*\
-  #BLOG
-\*-----------------------------------*/
-
-/* Blog section styles go here */
-
-/*-----------------------------------*\
-  #FOOTER
-\*-----------------------------------*/
-
-/* Footer styles go here */
-
-/*-----------------------------------*\
-  #BACK TO TOP
-\*-----------------------------------*/
-
-/* Back to top button styles go here */
-
-/*-----------------------------------*\
-  #MEDIA QUERIES
-\*-----------------------------------*/
-
-/* Media queries go here */
+ 
+ 
+ 
+ 
+ 
+ 
+ /**
+  * responsive for larger than 992px screen
+  */
+ 
+ @media (min-width: 992px) {
+ 
+   /**
+    * CUSTOM PROPERTY
+    */
+ 
+   :root {
+ 
+     /**
+      * spacing
+      */
+ 
+     --section-padding: 50px;
+ 
+   }
+ 
+ 
+ 
+   /**
+    * REUSED STYLE
+    */
+ 
+   .container { max-width: 960px; }
+ 
+   .scrollbar-item { min-width: calc(33.33% - 20px); }
+ 
+   .flex-item { max-width: calc(33.33% - 20px); }
+ 
+ 
+ 
+   /**
+    * COLLECTION
+    */
+ 
+   .collection-list {
+     grid-template-columns: repeat(3, 1fr);
+     gap: 30px;
+   }
+ 
+ 
+ 
+   /**
+    * BANNER
+    */
+ 
+   .banner-list { grid-template-columns: 1fr 0.5fr; }
+ 
+ 
+ 
+   /**
+    * OFFER
+    */
+ 
+   .offer .container {
+     display: grid;
+     grid-template-columns: 1fr 0.7fr;
+     align-items: center;
+     gap: 30px;
+   }
+ 
+   .offer-banner { margin-block-end: 0; }
+ 
+ 
+ 
+   /**
+    * FOOTER
+    */
+ 
+   .footer .logo { display: block; }
+ 
+   .footer { padding-block: 100px 80px; }
+ 
+   .footer-top {
+     grid-template-columns: 0.4fr 0.4fr 0.4fr 1fr;
+     margin-block-end: 120px;
+   }
+ 
+   .footer-list:last-child { grid-column: auto; }
+ 
+   .footer .logo img { width: 190px; }
+ 
+ }
+ 
+ 
+ 
+ 
+ 
+ /**
+  * responsive for larger than 1200px screen
+  */
+ 
+ @media (min-width: 1200px) {
+ 
+   /**
+    * REUSED STYLE
+    */
+ 
+   .container { max-width: 1900px; }
+ 
+   .scrollbar-item { min-width: calc(20% - 24px); }
+ 
+ 
+ 
+   /**
+    * HEADER
+    */
+ 
+   .header .input-wrapper,
+   .header-action-btn:not(:first-child),
+   .navbar { display: block; }
+ 
+   .nav-open-btn { display: none; }
+ 
+   .header {
+     padding-block-end: 60px;
+     margin-block-end: 10px;
+   }
+ 
+   .header-top {
+     position: unset;
+     padding-block: 24px 0;
+   }
+ 
+   .header-top:is(.active, .header-hide) { all: unset; }
+ 
+   .header-top .container { flex-wrap: wrap; }
+ 
+   .search-field {
+     width: 270;
+     font-size: var(--fs-7);
+     border: 2px solid var(--hoockers-green_20);
+     border-radius: var(--radius-3);
+     padding: 10px 20px;
+     padding-inline-end: 40px;
+     outline: none;
+     transition: var(--transition-1);
+   }
+ 
+   .search-field::placeholder { color: var(--spanish-gray); }
+ 
+   .search-field:focus { border-color: var(--black); }
+ 
+   .header .input-wrapper { position: relative; }
+ 
+   .header .search-submit {
+     position: absolute;
+     top: 50%;
+     right: 15px;
+     transform: translateY(-50%);
+     font-size: 22px;
+   }
+ 
+   .header .search-submit ion-icon { --ionicon-stroke-width: 40px; }
+ 
+   .header .logo { margin-inline-end: 60px; }
+ 
+   .header-actions {
+     display: flex;
+     align-items: center;
+     gap: 40px;
+   }
+ 
+   .header-action-btn { position: relative; }
+ 
+   .header-action-btn .btn-badge {
+     position: absolute;
+     top: 0;
+     right: -10px;
+     background-color: var(--black);
+     color: var(--white);
+     font-size: var(--fs-9);
+     min-width: 18px;
+     height: 18px;
+     line-height: 1.4;
+     border-radius: 20px;
+   }
+ 
+   .header-action-btn:last-child {
+     display: flex;
+     align-items: center;
+     gap: 10px;
+   }
+ 
+   .header-action-btn .btn-text {
+     font-size: var(--fs-7);
+     font-weight: var(--fw-700);
+     margin-block-start: 3px;
+   }
+ 
+   .navbar {
+     position: absolute;
+     bottom: 0;
+     left: 0;
+     width: 100%;
+     background-color: var(--white);
+     padding-block: 18px;
+     z-index: 4;
+   }
+ 
+   .navbar .navbar-list {
+     display: flex;
+     justify-content: center;
+     gap: 45px;
+   }
+ 
+   .navbar .navbar-link {
+     color: var(--black);
+     font-size: var(--fs-7);
+     font-weight: var(--fw-600);
+   }
+ 
+   .navbar .navbar-link::after {
+     bottom: 0;
+     left: 0;
+     width: 100%;
+     height: 1px;
+     background-color: var(--black);
+     transition: var(--transition-1);
+     transform: scaleX(0);
+     transform-origin: left;
+   }
+ 
+   .navbar .navbar-link:is(:hover, :focus)::after {
+     transform: scaleX(1);
+   }
+ 
+   .header-top.active .navbar {
+     position: fixed;
+     top: -80px;
+     bottom: auto;
+     padding-block: 28px;
+     box-shadow: var(--shadow-1);
+     transform: translateY(100%);
+     transition: var(--transition-2);
+   }
+ 
+   .header-top.header-hide .navbar {
+     box-shadow: none;
+     transform: translateY(0);
+   }
+ 
+ 
+ 
+   /**
+    * HERO
+    */
+ 
+   .hero-card { padding: 120px 100px; }
+ 
+   .hero-text { max-width: 40ch; }
+ 
+ 
+ 
+   /**
+    * BANNER
+    */
+ 
+   .banner-card-1 .card-title { max-width: 15ch; }
+ 
+ 
+ 
+   /**
+    * FEATURE
+    */
+ 
+   .feature .section-title { margin-block-end: 60px; }
+ 
+   .feature .flex-list {
+     gap: 100px;
+     padding-inline: 50px;
+   }
+ 
+   .feature .flex-item { max-width: calc(33.33% - 66.66px); }
+ 
+ 
+ 
+   /**
+    * OFFER
+    */
+ 
+   .offer .container { gap: 120px; }
+ 
+ }
