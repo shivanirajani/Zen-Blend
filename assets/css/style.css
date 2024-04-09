@@ -550,9 +550,15 @@ body{
   align-items: center;
   gap: 18px;
   margin-block-end: 50px;
+  margin-bottom: 90px;
 }
 
-.shop .btn-link:is(:hover, :focus) { color: var(--hoockers-green); }
+.shop .btn-link:is(:hover, :focus) { color: var(--hoockers-green);  /* Adjust the value as needed */ }
+
+.shop .btn-link{
+  margin-bottom: 40px;
+  margin-top: 290px;
+}
 
 .shop-card .card-banner {
   position: relative;
@@ -864,8 +870,8 @@ body{
    }
  
    .navbar .navbar-link {
-     color: var(--black);
-     font-size: var(--fs-7);
+     color: #48573F;
+     font-size: var(--fs-5);
      font-weight: var(--fw-600);
    }
  
