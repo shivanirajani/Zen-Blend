@@ -976,7 +976,7 @@ body{
   align-items: flex-start; /* Align items at the start of the cross axis */
   justify-content: center; /* Center items horizontally */
   flex-wrap: wrap; /* Allow items to wrap to the next line if necessary */
-  gap: 20px; /* Add gap between items */
+  gap: 30px; /* Add gap between items */
 
 }
 
@@ -987,12 +987,12 @@ body{
 
 .footer-list-title {
   color: var(--black);
-  font-size: var(--fs-4);
+  font-size: var(--fs-7);
   font-weight: var(--fw-800);
   margin-block-end: 10px;
 }
 
-.footer-list-text { font-size: var(--fs-6); }
+.footer-list-text { font-size: var(--fs-7); }
 
 .footer-list-text .link {
   display: inline-block;
@@ -1011,11 +1011,11 @@ body{
 }
 
 .footer-list-title{
-  font-size: var(--fs-4);
+  font-size: var(--fs-7);
 }
 
 .footer-link {
-  font-size: var(--fs-4);
+  font-size: var(--fs-7);
   padding-block: 5px;
   font-weight: var(--fw-900);
 }
@@ -1024,7 +1024,7 @@ body{
 
 .newsletter-title {
   color: var(--black);
-  font-size: var(--fs-3);
+  font-size: var(--fs-7);
   font-weight: var(--fw-600);
   line-height: 1.3;
 }
