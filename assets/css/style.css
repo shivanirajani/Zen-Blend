@@ -976,7 +976,7 @@ body{
   align-items: flex-start; /* Align items at the start of the cross axis */
   justify-content: center; /* Center items horizontally */
   flex-wrap: wrap; /* Allow items to wrap to the next line if necessary */
-  gap: 200px; /* Add gap between items */
+  gap: 100px; /* Add gap between items */
   margin-top: 40px;
 }
 
@@ -987,7 +987,7 @@ body{
 
 .footer-list-title {
   color: var(--black);
-  font-size: var(--fs-5);
+  font-size: var(--fs-4);
   font-weight: var(--fw-800);
   margin-block-end: 10px;
 }
@@ -1015,7 +1015,7 @@ body{
 }
 
 .footer-link {
-  font-size: var(--fs-5);
+  font-size: var(--fs-4);
   padding-block: 5px;
   font-weight: var(--fw-900);
 }
@@ -1079,7 +1079,7 @@ body{
 
 .social-link {
   color: var(--hoockers-green);
-  font-size: 22px;
+  font-size: 18px;
   transition: var(--transition-1);
   margin-bottom: 50px;
 }
