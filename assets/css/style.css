@@ -968,7 +968,7 @@ body{
 
 .footer {
   background-color: #F1EFE7;
-  padding-block: 20px; /* Reduce padding */
+  
 }
 
 .footer-top {
@@ -977,7 +977,7 @@ body{
   justify-content: center; /* Center items horizontally */
   flex-wrap: wrap; /* Allow items to wrap to the next line if necessary */
   gap: 100px; /* Add gap between items */
-  margin-top: 40px;
+
 }
 
 .footer-list {
