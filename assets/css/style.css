@@ -1060,7 +1060,7 @@ body{
   background-color: var(--hoockers-green);
 }
 
-.copyright { font-size: var(--fs-5); margin-left: 100px;   color: var(--black);}
+.copyright { font-size: var(--fs-7); margin-left: 100px;   color: var(--black);}
 
 .footer-bottom .wrapper {
   display: flex;
