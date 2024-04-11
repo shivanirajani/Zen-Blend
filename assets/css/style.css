@@ -1121,3 +1121,14 @@ body{
     align-items: center;
   }
 }
+
+
+
+@media (max-width: 767px) {
+  .shop .btn-link {
+    margin-top: 70px; /* Adjust the margin to move the link up */
+  }
+
+
+ 
+}
