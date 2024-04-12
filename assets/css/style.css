@@ -596,6 +596,7 @@ body{
   gap: 18px;
   margin-block-end: 50px;
   margin-bottom: 90px;
+
 }
 
 .shop .btn-link:is(:hover, :focus) { color: var(--hoockers-green);  /* Adjust the value as needed */ }
