@@ -614,7 +614,7 @@ body{
 
 
 .title-wrapper h2 {
-  font-size: var(--fs-2);
+  font-size: var(--fs-4);
 }
 
 .shop-card .badge {
@@ -710,7 +710,7 @@ body{
 
 .feature { text-align: center;}
 
-.feature .section-title { margin-block-end: 40px; font-size: var(--fs-2); }
+.feature .section-title { margin-block-end: 40px; font-size: var(--fs-4); }
 
 
 
@@ -721,9 +721,9 @@ body{
   margin-inline: auto;
 }
 
-.feature-card .card-title { margin-block: 35px 15px; text-align: left;  font-size: var(--fs-3) ; }
+.feature-card .card-title { margin-block: 35px 15px; text-align: left;  font-size: var(--fs-5) ; }
 
-.feature-card .card-text { font-size: var(--fs-6); text-align: justify; } 
+.feature-card .card-text { font-size: var(--fs-7); text-align: justify; } 
 
 
 
