@@ -201,7 +201,7 @@ body{
 }
 
 .alert{
-  background-color: var(--hoockers-green_20);
+  background-color: #F1EFE7;
   color: var(--black);
   font-size: var(--fs-7);
   text-transform: uppercase;
@@ -614,7 +614,7 @@ body{
 
 
 .title-wrapper h2 {
-  font-size: 40px;
+  font-size: var(--fs-2);
 }
 
 .shop-card .badge {
@@ -701,6 +701,31 @@ body{
 }
 
 
+/*-----------------------------------*\
+  #FEATURE
+\*-----------------------------------*/
+
+
+
+
+.feature { text-align: center;}
+
+.feature .section-title { margin-block-end: 40px; font-size: var(--fs-2); }
+
+
+
+
+.feature-card .card-icon {
+  margin: 20px;
+
+  margin-inline: auto;
+}
+
+.feature-card .card-title { margin-block: 35px 15px; text-align: left;  font-size: var(--fs-3) ; }
+
+.feature-card .card-text { font-size: var(--fs-6); text-align: justify; } 
+
+
 
 
 
@@ -710,7 +735,14 @@ body{
    * REUSED STYLE
    */
 
- 
+ .flex-list{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+
+  
+ }
  
  
  
@@ -1177,3 +1209,36 @@ body{
 
  
 }
+
+
+
+@media (max-width: 767px) {
+  .feature-card .card-icon {
+
+   width: 350px;
+  }
+  
+
+
+ 
+}
+
+
+
+@media (min-width: 1200px) {
+
+
+  /**
+   * FEATURE
+   */
+
+   .feature .section-title { margin-block-end: 60px; }
+
+
+   .feature .flex-list {
+     gap: 100px;
+     padding-inline: 50px;
+   }
+
+
+  }   
