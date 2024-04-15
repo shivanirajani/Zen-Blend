@@ -1215,7 +1215,7 @@ body{
 
 @media (max-width: 767px) {
   .feature-card .card-icon {
-
+   padding: 20px;
    width: 350px;
   }
   
