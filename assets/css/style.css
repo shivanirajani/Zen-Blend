@@ -201,7 +201,7 @@ body{
 }
 
 .alert{
-  background-color: #F1EFE7;
+  background-color: #b4cbb9;
   color: var(--black);
   font-size: var(--fs-7);
   text-transform: uppercase;
@@ -428,8 +428,8 @@ body{
 
 .btn-primary,
 .btn-secondary:is(:hover, :focus) {
-  background-color: #F1EFE7;
-  color: var(--black);
+  background-color: #435547;
+  color: var(--white);
   text-transform: uppercase;
   font-weight: var(--fw-700) ;
 }
@@ -710,7 +710,7 @@ body{
 
 .feature { text-align: center;}
 
-.feature .section-title { margin-block-end: 40px; font-size: var(--fs-2); align-items: }
+.feature .section-title { margin-block-end: 40px; font-size: var(--fs-2);  }
 
 
 
@@ -739,7 +739,7 @@ body{
   gap: 20px;
   margin-block-end: 60px;
   margin-left: 80px;
-  margin-top: 100px;
+  margin-top: 30px;
 }
 
 .offer-subtitle {
