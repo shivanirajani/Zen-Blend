@@ -718,6 +718,7 @@ body{
 .feature-card .card-icon {
   margin: 20px;
   height: 400px;
+  width: 400px;
   margin-inline: auto;
 }
 
