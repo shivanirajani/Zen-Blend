@@ -724,7 +724,7 @@ body{
 
 .feature-card .card-title { margin-block: 35px 15px; text-align: left;  font-size: var(--fs-4) ; }
 
-.feature-card .card-text { font-size: 16px; text-align: justify; } 
+.feature-card .card-text { font-size: 14px; text-align: justify; } 
 
 
 /*-----------------------------------*\
