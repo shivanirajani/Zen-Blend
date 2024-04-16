@@ -376,7 +376,7 @@ body{
   position: relative;
 }
 
-.search-field {
+.search-field-navbar {
   width: 300px; /* make sure to specify unit(px) */
   font-size: var(--fs-7);
   border: 2px solid var(--hoockers-green_20);
@@ -388,15 +388,15 @@ body{
   margin-right: 30px;
 }
 
-.search-field::placeholder {
+.search-field-navbar::placeholder {
   color: var(--spanish-gray);
 }
 
-.search-field:focus {
+.search-field-navbar:focus {
   border-color: var(--black);
 }
 
-.search-submit {
+.search-submit-navbar {
   position: absolute;
   top: 50%;
   right: 10px; /* adjust as needed */
@@ -404,7 +404,7 @@ body{
   font-size: 22px;
 }
 
-.search-submit ion-icon {
+.search-submit-navbar ion-icon {
   --ionicon-stroke-width: 40px;
 }
 
