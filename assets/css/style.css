@@ -334,6 +334,8 @@ body{
   letter-spacing: 1px;
   padding-block: 5px;
   gap: 20px;
+
+
   transition: var(--transition-1);
 
 
@@ -341,7 +343,7 @@ body{
 
 .mobile-navbar .navbar-link {
   font-size: var(--fs-4);
-  margin-top: 20px;
+  margin-top: 40px;
   font-weight: var(--fw-500);
 }
 
@@ -364,6 +366,46 @@ body{
 .overlay.active{
   background-color: var(--black_50);
   pointer-events: all;
+}
+
+
+
+
+
+.input-wrapper {
+  position: relative;
+}
+
+.search-field {
+  width: 300px; /* make sure to specify unit(px) */
+  font-size: var(--fs-7);
+  border: 2px solid var(--hoockers-green_20);
+  border-radius: var(--radius-3);
+  padding: 10px 20px 10px 10px; /* added padding-right for icon */
+  outline: none;
+  transition: var(--transition-1);
+  margin-top: -450px;
+  margin-right: 30px;
+}
+
+.search-field::placeholder {
+  color: var(--spanish-gray);
+}
+
+.search-field:focus {
+  border-color: var(--black);
+}
+
+.search-submit {
+  position: absolute;
+  top: 50%;
+  right: 10px; /* adjust as needed */
+  transform: translateY(-50%);
+  font-size: 22px;
+}
+
+.search-submit ion-icon {
+  --ionicon-stroke-width: 40px;
 }
 
 /*-----------------------------------*\
