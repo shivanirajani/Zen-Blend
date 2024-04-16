@@ -722,7 +722,7 @@ body{
   margin-inline: auto;
 }
 
-.feature-card .card-title { margin-block: 35px 15px; text-align: jsuti;  font-size: var(--fs-4) ; }
+.feature-card .card-title { margin-block: 35px 15px; text-align: justify;  font-size: var(--fs-4) ; }
 
 .feature-card .card-text { font-size: 14px; text-align: justify; } 
 
