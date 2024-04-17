@@ -853,7 +853,7 @@ body{
   justify-content: space-between;
 }
 .wrapper .box{
-  background-color: #b4cbb9;
+  background-color: #e9efec;
   width: calc(33% - 10px);
   padding: 25px;
   border-radius: 3px;
