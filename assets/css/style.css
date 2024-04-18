@@ -1357,10 +1357,7 @@ ul li a:hover{
    
 }
 
-.links img{
-  margin-left: 40px;
-  margin-top: 20px;
-}
+
 
 .links a:hover{
     color: white;
@@ -1378,10 +1375,7 @@ ul li a:hover{
         all: unset;
     }
 
-    .links img{
-      margin-left: -2px;
-      margin-top: 50px;
-    }
+   
 }
 
 @media(max-width: 555px){
