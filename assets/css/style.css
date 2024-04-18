@@ -1374,7 +1374,7 @@ footer{
     opacity: 1;
     text-transform: uppercase;
     letter-spacing: 1px;
-    font-weight: 400;
+    font-weight: var(--fw-800);
     margin: 0px 5px;
     display: inline;
     color: var(--black);
