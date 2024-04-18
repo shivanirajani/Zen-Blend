@@ -1319,7 +1319,7 @@ ul{
     position: relative;
     margin-bottom: 30px;
     font-weight:var(--fw-900);
-    font-size: 22px;
+    font-size: var(--fs-6);
     color: var(--black);
     text-transform: capitalize;
 }
@@ -1330,7 +1330,7 @@ ul{
 
 ul li a{
     display: block;
-    font-size: 19px;
+    font-size: var(--fs-7);
     text-transform: capitalize;
     color: var(--black);
     text-decoration: none;
