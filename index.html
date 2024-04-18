@@ -16,7 +16,7 @@
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Urbanist:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
 
 
@@ -96,7 +96,7 @@
                         </li>
 
                         <li>
-                            <a href="#offer" class="navbar-link has-after">Special Offers</a>
+                            <a href="#offer" class="navbar-link has-after">Special Offer</a>
                         </li>
                         <li>
                             <a href="#reviews" class="navbar-link has-after">Reviews</a>
@@ -134,7 +134,7 @@
             </li> 
 
             <li>
-                <a href="#offer" class="navbar-link" data-nav-link>Special Offers</a>
+                <a href="#offer" class="navbar-link" data-nav-link>Special Offer</a>
             </li> 
 
             <li>
@@ -1377,46 +1377,35 @@
           </div>
 
           <footer>
-            <div class="footer-col">
-                <h4>Shop</h4>
-                <ul>
-                    <li><a href="#">Our Bestsellers</a></li>
-                    <li><a href="#">Latest Collection</a></li>
-                    <li><a href="#">Special Offer</a></li>
-                </ul>
-            </div>
-            <div class="footer-col">
-                <h4>About Us</h4>
-                <ul>
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">Why Shop at Zen Blend?</a></li>
-                </ul>
-            </div>
-            <div class="footer-col">
-                <h4>Infomration</h4>
-                <ul>
-                    <li><a href="#">Contact Us</a></li>
-                    <li><a href="#">Terms ans Conditions</a></li>
-                    <li><a href="#">Privacy Policy</a></li>
-                </ul>
-            </div>
-            <div class="footer-col">
-                <h4>follow us</h4>
-                <div class="links">
-                    <a href="#"><i class="fab fa-linkedin-in"></i></a>
-                    <a href="#"><i class="fab fa-facebook-f"></i></a>
-                    <a href="#"><i class="fab fa-instagram"></i></a>
-            
-                    <img src="./assets/images/pay.png" width="313" height="28" alt="available all payment method" class="w-100">
-            
-                  </div>
-            
+            <div class="footerContainer">
+                <div class="socialIcons">
+                    <a href=""><i class="fa-brands fa-facebook"></i></a>
+                    <a href=""><i class="fa-brands fa-instagram"></i></a>
+                    <a href=""><i class="fa-brands fa-twitter"></i></a>
+                    <a href=""><i class="fa-brands fa-google-plus"></i></a>
+                    <a href=""><i class="fa-brands fa-youtube"></i></a>
                 </div>
+                <div class="footerNav">
+                    <ul><li><a href="#home">Home</a></li>
+                        <li><a href="#shop">Shop</a></li>
+                        <li><a href="#offer">Special Offer</a></li>
+                        <li><a href="#reviews">Reviews</a></li>
+                    </ul>
+                </div>
+                
             </div>
-        </footer>
-
-
-
+            <div class="footerBottom">
+              <p>Copyright &copy;<span id="currentYear"></span>; Designed by <span class="designer">Shivani</span></p>
+          </div>
+      </footer>
+  
+      <script>
+          document.addEventListener('DOMContentLoaded', function() {
+              var yearSpan = document.getElementById('currentYear');
+              var currentYear = new Date().getFullYear();
+              yearSpan.textContent = currentYear;
+          });
+      </script>
 
 
 
