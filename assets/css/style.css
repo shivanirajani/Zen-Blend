@@ -1165,9 +1165,10 @@ body{
      display: flex;
      align-items: center;
      gap: 40px;
+  
    }
  
-   .header-action-btn { position: relative; }
+   .header-action-btn { position: relative;  color: var(--black_70); font-weight: bolder;}
  
    .header-action-btn .btn-badge {
      position: absolute;
@@ -1341,7 +1342,7 @@ footer{
     justify-content: center;
     list-style-type: none;
     margin-bottom: 20px;
-    margin-top: -40px;
+    margin-top: -0px;
 }
 .footerNav ul li a{
     color:var(--black);
