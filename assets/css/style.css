@@ -1340,6 +1340,8 @@ footer{
     display: flex;
     justify-content: center;
     list-style-type: none;
+    margin-bottom: 20px;
+    margin-top: -40px;
 }
 .footerNav ul li a{
     color:var(--black);
@@ -1348,6 +1350,7 @@ footer{
     font-size: 1.3em;
     opacity: 0.7;
     transition: 0.5s;
+
 
 }
 .footerNav ul li a:hover{
@@ -1361,6 +1364,10 @@ footer{
 .footerBottom p{
     color: var(--black);
     display: inline-flex
+}
+
+.footerNav img{
+  display: inline;
 }
 .designer{
     opacity: 0.7;
